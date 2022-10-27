@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./tailwind.css">
+    <title>Shortly</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Laptop Nav -->
+        <nav class="hidden lg:flex justify-between items-center mx-auto pt-5 max-w-6xl">
+            <div class="flex justify-between space-x-5">
+                <img src="./images/logo.svg" alt="" class="pr-20">
+                <p class="text-gray-500 font-bold hover:text-black">Features</p>
+                <p class="text-gray-500 font-bold hover:text-black">Pricing</p>
+                <p class="text-gray-500 font-bold hover:text-black">Resources</p>
+            </div>
+            <div class="space-x-5 font-bold">
+                <a href="#" class="text-gray-500 font-bold hover:text-black">Login</a>
+                <a href="#" class="px-3 py-2 rounded-lg text-white bg-cyan hover:bg-cyanLight">Signup</a>
+            </div>
+        </nav>
+        <!-- Mobile Nav -->
+        <nav class="flex justify-between lg:hidden mt-8 px-8">
+            <div>
+                <img src="./images/logo.svg" alt="">
+            </div>
+            <button class="block hamburger" id="menu-btn" type="button">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </nav>
+        <div id="mobileNav" class="hidden flex-col mx-8 bg-darkViolet px-10 mt-2 rounded-lg">
+               <div class="flex flex-col justify-center items-center pb-6 pt-6 text-white">
+                   <p>Features</p>
+                   <p>Pricing</p>
+                   <p>Resources</p>
+                   <hr class="border-1 mt-2 border-white w-5/6">
+                   <a href="#" class="mt-4">Login</a>
+                   <a href="#" class="mt-2 bg-cyan hover:bg-cyanLight rounded-xl w-2/3 text-center py-3">Signup</a>
+               </div>
+        </div>
+    </div>
+    <!-- Hero Section -->
+    <section>
+        <div class="flex flex-col md:flex-row px-10 mt-10 md:mt-24 justify-center md:justify-evenly">
+            <div class="md:order-2 md:w-auto lg:w-2/5 px-10 md:px-0 mb-8 md:mb-0">
+                 <img src="./images/illustration-working.svg" alt="">
+            </div>
+            <div class="md:order-1 text-center md:text-left md:w-180">
+                <h3 class="text-5xl font-bold mb-4">More Than Just Shorter Links</h3>
+                <p class="mb-10 text-xl text-gray-400">Lorem ipsum tias sunt, fvoluptatibus similique deleniti?voluptatem repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit.?</p>
+                <a href="#" class="px-4 py-3 bg-cyan hover:bg-cyanLight text-white rounded-3xl text-xl font-bold">Get Started</a>
+            </div>
+        </div>
+    </section>
+    <!-- Main Section -->
+    <section class="bg-gray-100 mt-40 md:mt-28 pb-20">
+        <div class="relative max-w-4xl pb-4 mx-8 -top-16 md:-top-2 md:mx-auto">
+            <form action="" id="form" class="bg-darkViolet absolute w-full -top-16 rounded-lg rela flex flex-col md:flex-row p-8 space-x-8 space-y-8 md:space-y-0">
+                <input type="text" id="input" class="rounded-lg p-3 focus:outline-none flex-1 text-center" placeholder="Paste your link">
+                <button id="btn" class="text-white bg-cyan p-4 rounded-lg self-center w-2/3 md:w-auto text-lg hover:bg-cyanLight">Shorten</button>
+            </form>
+            <div id="errMsg" class="text-red mx-auto text-center">
+            </div>
+        </div>
+        <!-- Link 1 -->
+        <div class="max-w-4xl mx-4 md:mx-auto mt-20 pt-4 md:pt-0 rounded-lg bg-white flex flex-col md:flex-row justify-center md:justify-between items-center">
+            <p class="pl-4 font-bold">https://facebook.cpm/samiul123</p>
+            <div class="rounded-lg flex flex-col md:flex-row justify-center items-center space-x-5 pt-0 pb-4 md:p-4">
+                <p class="text-cyan font-bold">https://short.ly/4dd4F4</p>
+                <button class="text-white text-lg bg-cyan hover:bg-cyanLight px-4 py-3 rounded-lg">Copy</button>
+            </div>
+        </div>
+        <!-- Link 2 -->
+        <div class="max-w-4xl mx-4 md:mx-auto mt-4 pt-4 md:pt-0 rounded-lg bg-white flex flex-wrap flex-col md:flex-row justify-center md:justify-between items-center">
+            <p class="pl-4 font-bold">https://facebook.cpm/samiul123</p>
+            <div class="rounded-lg flex flex-col md:flex-row justify-center items-center space-x-5 pt-0 pb-4 md:p-4">
+                <p class="text-cyan font-bold">https://short.ly/4dd4F4</p>
+                <button class="text-white text-lg bg-darkViolet hover:bg-violet-900 px-4 py-3 rounded-lg">Copy</button>
+            </div>
+        </div>
+        <!-- Link 3 -->
+        <div class="max-w-4xl mx-4 md:mx-auto mt-4 pt-4 md:pt-0 rounded-lg bg-white flex flex-col md:flex-row justify-center md:justify-between items-center">
+            <p class="pl-4 font-bold">https://facebook.cpm/samiul123</p>
+            <div class="rounded-lg flex flex-col md:flex-row justify-center items-center space-x-5 pt-0 pb-4 md:p-4">
+                <p class="text-cyan font-bold">https://short.ly/4dd4F4</p>
+                <button class="text-white text-lg bg-cyan hover:bg-cyanLight px-4 py-3 rounded-lg">Copy</button>
+            </div>
+        </div>
+    </section>
+    <!-- Advanced Stat -->
+    <section class="bg-gray-100">
+        <div class="mx-8 pb-10">
+            <h1 class="text-center text-4xl font-bold">Advanced Statistics</h1>
+            <p class="text-center text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quas incidunt impedit, saepe vel asperiores!</p>
+        </div>
+    </section>
+    <!-- Boxes -->
+    <section class="bg-gray-100 mx-auto">
+        <div class="relative max-w-6xl flex flex-col md:flex-row mx-auto px-1 items-start pb-10">
+            <!-- Vertical Line -->
+            <div class="hidden md:block  absolute top-40 left-8 w-10/12 bg-cyan h-3"></div>
+            <!-- Horizontal -->
+            <div class="md:hidden absolute self-center w-2 h-5/6 bg-cyan"></div>
+
+            <div class="relative flex flex-col md:flex-row p-4 items-start mx-10 md:mx-0 space-y-20 md:space-y-0 md:space-x-10">
+                <!-- Box 1 -->
+                <div>
+                    <div class="bg-white mx-auto rounded-lg shadow-lg p-10">
+                        <div class="relative  bg-veryDarkBlue -top-20 mx-auto rounded-full w-20 h-20">
+                            <div class="absolute left-5 top-5">
+                                <img src="./images/icon-brand-recognition.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="mx-auto -mt-16 text-center">
+                            <h3 class="text-2xl font-bold">
+                            Brand Recognition
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, rerum.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Box 2 -->
+                <div class="md:pt-4">
+                    <div class="bg-white mx-auto -top-20 rounded-lg shadow-lg p-10">
+                        <div class="relative bg-veryDarkBlue -top-20 mx-auto rounded-full w-20 h-20">
+                            <div class="absolute left-5 top-5">
+                                <img src="./images/icon-detailed-records.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="mx-auto -mt-16 text-center">
+                            <h3 class="text-2xl font-bold">
+                            Detailed Records
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, rerum.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Box 3 -->
+                <div class="md:pt-8">
+                    <div class="bg-white mx-auto rounded-lg shadow-lg p-10">
+                        <div class="relative bg-veryDarkBlue -top-20 mx-auto rounded-full w-20 h-20">
+                            <div class="absolute left-5 top-5">
+                                <img src="./images/icon-fully-customizable.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="mx-auto -mt-16 text-center">
+                            <h3 class="text-2xl font-bold">
+                            Fully customizable
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, rerum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA -->
+    <section>
+        <div class="flex flex-col space-y-6 py-20 bg-darkViolet text-white" id="cta">
+            <h1 class="text-2xl md:text-4xl font-bold text-center">Boost Your Links Today</h1>
+            <button class="text-lg px-6 font-bold py-3 rounded-3xl mx-auto bg-cyan hover:bg-cyanLight scale-105 duration-200">Get Started</button>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section>
+        <div class="flex flex-col md:flex-row bg-gray-900 mx-auto justify-evenly items-center pb-12 md:pb-0">
+            <div class="mt-10 md:mt-0">
+                <img src="./images/logo.svg" alt="">
+            </div>
+            <div class="flex flex-col md:flex-row justify-center items-start md:space-x-10">
+                <div class="flex flex-col justify-center items-center text-gray-400 mt-10 mb-10">
+                    <p class="font-bold text-white pb-4">Features</p>
+                    <a href="#" class="hover:text-white">Link Shortening</a>
+                    <a href="#" class="hover:text-white">Branded Links</a>
+                    <a href="#" class="hover:text-white">Analytics</a>
+                </div>
+                <div class="flex flex-col justify-center items-center text-gray-400 mt-10 mb-10">
+                    <p class="font-bold text-white pb-4">Resources</p>
+                    <a href="#" class="hover:text-white">Blog</a>
+                    <a href="#" class="hover:text-white">Developers</a>
+                    <a href="#" class="hover:text-white">Support</a>
+                </div>
+                <div class="flex flex-col justify-center items-center text-gray-400 mt-10 mb-10">
+                    <p class="font-bold text-white pb-4">Company</p>
+                    <a href="#" class="hover:text-white">About</a>
+                    <a href="#" class="hover:text-white">Our Team</a>
+                    <a href="#" class="hover:text-white">Contact</a>
+                    <a href="#" class="hover:text-white">Career</a>
+                </div>
+            </div>
+            <div class="flex space-x-2">
+                <img src="./images/icon-facebook.svg" alt="" class="hover:opacity-80">
+                <img src="./images/icon-instagram.svg" alt="" class="hover:opacity-80">
+                <img src="./images/icon-twitter.svg" alt="" class="hover:opacity-80">
+                <img src="./images/icon-pinterest.svg" alt="" class="hover:opacity-80">
+            </div>
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+</html>
