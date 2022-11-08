@@ -617,6 +617,22 @@ video {
   top: 1.25rem;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.top-2 {
+  top: 0.5rem;
+}
+
+.top-28 {
+  top: 7rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -880,6 +896,10 @@ video {
 
 .p-10 {
   padding: 2.5rem;
+}
+
+.p-20 {
+  padding: 5rem;
 }
 
 .px-3 {
